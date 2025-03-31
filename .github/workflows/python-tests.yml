@@ -1,7 +1,10 @@
 name: Python Tests
 
 on: [push, pull_request]  # Trigger CI on push and pull requests
-
+  branches:
+  - main
+  - review
+  
 jobs:
   test:
     runs-on: ubuntu-latest  # Use the latest Ubuntu for testing
