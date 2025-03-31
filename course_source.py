@@ -38,7 +38,7 @@ print(f"Total scrap transport from AT to PL 2030 to 2050: {total_scrap_transport
 # Function 4: To check if enough train cargo capacity for transportation exists
 def enough_train_cargo_capacity(scrap_transportable_from_AT_to_PL_solution, total_cargo_capacity_solution):
     enough = scrap_transportable_from_AT_to_PL_solution / total_cargo_capacity_solution
-    return enough
+    return 0
 
 enough_solution = enough_train_cargo_capacity(140000, 105000)
 print(f"if > 1 then we have not enough train cargo capacity to transport all the scrap from AT to PL; if < 1 we have enough: {enough_solution}")
